@@ -6,7 +6,7 @@ Projeto de Machine Learning para estimar a propensão de clientes a realizar uma
 
 ## Dataset
 
-Utiliza o dataset [Online Retail II](https://archive.ics.uci.edu/dataset/502/online+retail+ii), do UCI Machine Learning Repository, com dados de transações de um varejista online.
+Utiliza o dataset [Online Retail II](https://archive.ics.uci.edu/dataset/502/online+retail+ii), do UCI Machine Learning Repository com dados de transações de um varejista online.
 
 ## Metodologia
 
@@ -23,9 +23,6 @@ A Regressão Logística apresentou o melhor resultado geral na avaliação inici
 
 A avaliação utilizou uma divisão aleatória entre treino e teste. É necessária validação temporal para verificar o desempenho em períodos futuros. As previsões representam propensão à recompra, não impacto causal de campanhas.
 
-## Tecnologias
-
-Python, Pandas, NumPy, Matplotlib, Scikit-learn e Jupyter Notebook.
 
 ## Como executar
 
@@ -60,9 +57,6 @@ Logistic Regression achieved the best overall results in the initial evaluation.
 
 The evaluation used a random train-test split. Temporal validation is needed to assess performance on future periods. Predictions represent repurchase propensity, not the causal impact of marketing campaigns.
 
-## Technologies
-
-Python, Pandas, NumPy, Matplotlib, Scikit-learn, and Jupyter Notebook.
 
 ## How to Run
 
