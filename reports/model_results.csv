@@ -1,0 +1,4 @@
+Model,ROC-AUC,PR-AUC
+Baseline - Invoice Count,0.713,0.758
+Logistic Regression,0.729,0.793
+Random Forest,0.715,0.791
