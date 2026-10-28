@@ -73,16 +73,52 @@ A Regressão Logística apresentou os melhores resultados entre os modelos avali
 
 ## Como executar
 
-1. Clone ou baixe este repositório.
-2. Instale as bibliotecas necessárias para executar os notebooks.
-3. Abra a pasta `notebooks`.
-4. Execute os notebooks na seguinte ordem:
+### 1. Clonar o repositório
 
-   1. `01_exploratory_analysis.ipynb`
-   2. `02_features_and_target.ipynb`
-   3. `03_modeling_and_evaluation.ipynb`
+```bash
+git clone https://github.com/palomafrns/customer-repurchase-propensity.git
+cd customer-repurchase-propensity
+```
 
-Confira os caminhos dos arquivos e a instalação das dependências antes de executar o projeto em outro ambiente.
+### 2. Criar e ativar o ambiente virtual
+
+No Windows PowerShell:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+```
+
+### 3. Instalar as dependências
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+### 4. Baixar os dados
+
+Baixe o dataset **Online Retail II** na [página oficial da UCI](https://archive.ics.uci.edu/dataset/502/online%2Bretail%2Bii).
+
+Coloque o arquivo Excel na pasta `data/raw/` e renomeie-o para `base.xlsx`, caso esse seja o nome esperado pelo primeiro notebook.
+
+O arquivo original não está incluído no repositório.
+
+### 5. Executar os notebooks
+
+Abra o projeto no Jupyter Notebook ou no VS Code e execute os arquivos nesta ordem:
+
+1. `notebooks/01_exploratory_analysis.ipynb`
+2. `notebooks/02_features_and_target.ipynb`
+3. `notebooks/03_modeling_and_evaluation.ipynb`
+
+Execute as células de cada notebook na ordem apresentada. As etapas seguintes dependem dos arquivos gerados pelas anteriores.
+
+### Fonte dos dados
+
+Chen, D. (2012). *Online Retail II*. UCI Machine Learning Repository.
+
+https://doi.org/10.24432/C5CG6D
+
 
 ## Limitações e próximos passos
 
@@ -91,8 +127,3 @@ Confira os caminhos dos arquivos e a instalação das dependências antes de exe
 - A validação em novos períodos é importante para avaliar a capacidade de generalização.
 - Os resultados não garantem que um cliente realizará uma nova compra.
 
-## Fonte dos dados
-
-Online Retail II — UCI Machine Learning Repository.
-
-https://archive.ics.uci.edu/
